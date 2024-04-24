@@ -1,12 +1,3 @@
-package com.sharep.be.modules.account;
-
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
-
-@RestController
-@RequestMapping("/account")
-public class AccountController {
-
-
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:92aebf45ad53aaf087decc9c8d0173a6f082f764b48f8fc7cdc50777300f9bfe
+size 1132
