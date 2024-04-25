@@ -14,4 +14,9 @@ public class AuthDto {
         @NotBlank
         private String password;
     }
+
+    @Data
+    public static class ApiToken{
+        private String apiToken;
+    }
 }
