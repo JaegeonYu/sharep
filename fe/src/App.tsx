@@ -1,7 +1,12 @@
-import React from "react";
+import React from 'react';
+import { GlobalStyle } from './styles';
 
 function App() {
-  return <></>;
+  return (
+    <>
+      <GlobalStyle />
+    </>
+  );
 }
 
 export default App;
