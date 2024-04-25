@@ -1,7 +1,11 @@
-import React from "react";
+import { SideBar } from './components';
 
 function App() {
-  return <></>;
+  return (
+    <>
+      <SideBar></SideBar>
+    </>
+  );
 }
 
 export default App;
