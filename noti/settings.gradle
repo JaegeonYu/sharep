@@ -1,3 +1,1 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:4c9a8c29d29806d3262056bafafff5bfe09be6413c83f448d293980492437c61
-size 26
+rootProject.name = 'noti'

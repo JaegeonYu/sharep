@@ -1,3 +1,13 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:30b82c635ed94b801379c293d810e37175bcd154ddfe084abd731ac515debfe1
-size 316
+package com.sharep.noti;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+
+@SpringBootApplication
+public class NotiApplication {
+
+    public static void main(String[] args) {
+        SpringApplication.run(NotiApplication.class, args);
+    }
+
+}
