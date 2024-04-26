@@ -1,3 +1,3 @@
 export interface JobBadgeProps {
-  job: 'FE' | 'BE' | 'Infra' | 'Design';
+  job: 'FRONT_END' | 'BACK_END' | 'INFRA' | 'DESIGNER';
 }
