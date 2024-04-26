@@ -1,1 +1,3 @@
-export interface CommitProps {}
+export interface CommitProps {
+  imageUrl?: string;
+}
