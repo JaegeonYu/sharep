@@ -1,3 +1,3 @@
 export interface StatusBadgeProps {
-  status: '시작 전' | '진행 중' | '완료';
+  status: 'YET' | 'NOW' | 'DONE';
 }
