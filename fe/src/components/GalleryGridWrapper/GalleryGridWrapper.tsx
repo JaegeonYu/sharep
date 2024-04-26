@@ -1,16 +1,3 @@
-import React from 'react';
-import * as S from './GalleryGridWrapperStyle';
-import * as T from '@/types';
-import GalleryCard from '../GalleryCard/GalleryCard';
-
-export default function GalleryGridWrapper({}: T.GalleryGridWrapperProps) {
-  return (
-    <S.Grid>
-      <S.CardList>
-        {Array.from({ length: 5 }).map((_, index) => (
-          <GalleryCard key={index}></GalleryCard>
-        ))}
-      </S.CardList>
-    </S.Grid>
-  );
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:2590b62431cd25b4bb6549a0bcce6ea976a3a5b298919087a71c60944ac8c830
+size 1128

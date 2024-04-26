@@ -1,20 +1,3 @@
-import GalleryGridWrapper from '@/components/GalleryGridWrapper/GalleryGridWrapper';
-import { PALETTE } from '@/styles';
-import React from 'react';
-
-export default function SeoJeong() {
-  return (
-    <div
-      style={{
-        margin: 'auto',
-        width: '90%',
-        height: '90%',
-        gap: 10,
-        background: '#f7f7f7',
-        border: '1px solid black',
-      }}
-    >
-      <GalleryGridWrapper></GalleryGridWrapper>
-    </div>
-  );
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:015e0c88851ee2eea68c400780ab871b14e0cfe7867c390eb7c511faf4859f01
+size 737

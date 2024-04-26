@@ -12,9 +12,9 @@ export const Grid = styled.div`
 
 export const CardList = styled.div`
   width: 100%;
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  justify-items: center;
   gap: 50px;
-  padding: 0 20px;
-  border: 1px solid black;
+  padding: 24px 16px;
 `;
