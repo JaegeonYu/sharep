@@ -1,3 +1,20 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:fb818f5f65574b3c4b931fcfe74fcd03081581ee4bc6b7503a5cf4552507cdd2
-size 490
+export const PALETTE = {
+  MAIN_BACKGROUND: "#f7f7f7",
+  MAIN_WHITE: "#ffffff",
+  GRASS_1: "#9be9a8",
+  GRASS_2: "#2eb872",
+  GRASS_3: "#30a14e",
+  GRASS_4: "#216e39",
+  GRASS_BORDER_1: "#1b1f23",
+  GRASS_BORDER_2: "#1b1f23",
+  GRASS_BORDER_3: "#1b1f23",
+  GRASS_BORDER_4: "#1b1f23",
+  NO_GRASS_BORDER: "#1b1f23",
+  NO_GRASS: "#ebedf0",
+  MAIN_BLACK: "#1f2328",
+  SUB_BLACK: "#24292f",
+  LIGHT_BLACK: "#636c76",
+  MAIN_COLOR: "#2eb872",
+  SUB_COLOR: "#83cc61",
+  LIGHT_COLOR: "#a3de83",
+};

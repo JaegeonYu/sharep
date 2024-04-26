@@ -1,3 +1,1 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:1f9e6aaa60fd0aa5f99dcb41db5db7de470a31f54d9a32bb1810b817ec7e1565
-size 24
+rootProject.name = 'be'
