@@ -1,3 +1,3 @@
 export interface StatusBadgeProps {
-  status: '1' | '2' | '3';
+  status: '시작 전' | '진행 중' | '완료';
 }
