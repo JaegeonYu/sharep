@@ -1,16 +1,3 @@
-import React from 'react';
-import * as S from './SideBarStyle';
-
-export default function SideBar() {
-  return (
-    <>
-      <S.SideBarWrapper>
-        <S.SideBarProfile>
-          <S.SideBarProfilePhoto>thisis</S.SideBarProfilePhoto>
-          <S.SideBarProfilePhoto>thisis</S.SideBarProfilePhoto>
-        </S.SideBarProfile>
-        <S.SideBarProfile>NIVE</S.SideBarProfile>
-      </S.SideBarWrapper>
-    </>
-  );
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:bea52a3f8476d2e37791f366d806d59edf769f530a0ed10a063395d280cbb7a5
+size 2778
