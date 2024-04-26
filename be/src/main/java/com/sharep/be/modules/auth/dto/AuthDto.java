@@ -5,8 +5,10 @@ import jakarta.validation.constraints.NotBlank;
 import lombok.Data;
 
 public class AuthDto {
+
     @Data
-    public static class AuthRequestDto{
+    public static class AuthRequestDto {
+
         @Email
         @NotBlank
         private String email;
@@ -16,7 +18,8 @@ public class AuthDto {
     }
 
     @Data
-    public static class ApiToken{
+    public static class ApiToken {
+
         private String apiToken;
     }
 }
