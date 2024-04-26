@@ -6,6 +6,7 @@ import static com.google.common.base.Preconditions.checkArgument;
 
 @ToString
 public class JwtAuthentication {
+
     public final Long id;
     public final String email;
 
