@@ -1,3 +1,4 @@
 import SideBar from './SideBar/SideBar';
+import InputWithLabel from './InputWithLabel/InputWithLabel';
 
-export { SideBar };
+export { InputWithLabel, SideBar };
