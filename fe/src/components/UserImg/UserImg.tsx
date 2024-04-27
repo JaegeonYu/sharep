@@ -1,3 +1,18 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:ba9647f6fc8c85c4e43392faf19098219ceeec5fe8dc40dee29bcc9ca839fb25
-size 309
+import * as S from './UserImgStyle';
+import * as T from '@/types';
+
+/**
+ *
+ * @param size
+ * sm , md , lg  3-types
+ * @param path
+ * Img URL PLZ
+ *
+ */
+export default function UserImg({ size, path }: T.UserImgProps) {
+  return (
+    <>
+      <S.ImgCircle size={size} path={path}></S.ImgCircle>
+    </>
+  );
+}
