@@ -1,12 +1,3 @@
-import styled from 'styled-components';
-import { PALETTE } from '@/styles';
-
-export const Wrapper = styled.div<{ bgColor: string }>`
-  width: fit-content;
-  height: fit-content;
-  padding: 4px 6px;
-  border-radius: 6px;
-  font-size: 12px;
-  color: ${PALETTE.SUB_BLACK};
-  background-color: ${({ bgColor }) => bgColor};
-`;
+version https://git-lfs.github.com/spec/v1
+oid sha256:933bb6118225ae2b5e3e80b1661acf39292f9cfa219ec6f451d7d4862f74b78b
+size 325
