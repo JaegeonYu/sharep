@@ -13,5 +13,5 @@ const METHOD_BADGE_BG_COLOR: {
 };
 
 export default function MethodBadge({ name }: T.MethodBadgeProps) {
-  return <S.Wrapper bgColor={METHOD_BADGE_BG_COLOR[name]}>{name}</S.Wrapper>;
+  return <S.Wrapper $bgColor={METHOD_BADGE_BG_COLOR[name]}>{name}</S.Wrapper>;
 }
