@@ -1,3 +1,17 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:db1194c6cd04a5359134a1105dadf3e7594b8eb5c747ffd5a6a5eec0e98e4906
-size 420
+import * as S from './MainColorBtnStyle';
+import * as G from '@/styles';
+import * as T from '@/types';
+
+/**
+ * children => 버튼내용
+ * bgc => boolean true : 배경 시그니처 색  / false : 흰배경
+ */
+export default function MainColorBtn({ children, bgc, disabled }: T.MainColorBtnProps) {
+  return (
+    <>
+      <S.Wrapper $flag={bgc} disabled={disabled}>
+        {children}
+      </S.Wrapper>
+    </>
+  );
+}

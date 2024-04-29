@@ -1,3 +1,15 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:088950a2a17f7ebe8d08deb622b043bad06d1eab544de457812298b201bfa380
-size 336
+import React from 'react';
+import * as S from './TableBtnStyle';
+import * as G from '@/styles';
+
+import { Plus } from 'lucide-react';
+
+export default function TableBtn() {
+  return (
+    <>
+      <S.Wrapper className="hover-bg-dark">
+        <Plus color={G.PALETTE.LIGHT_BLACK}></Plus>새로 만들기
+      </S.Wrapper>
+    </>
+  );
+}

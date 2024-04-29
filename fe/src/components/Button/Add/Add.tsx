@@ -1,3 +1,13 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:02b9d40f834d13bcf9228df1f2753e3a990db08da052f792ee022543b5c8fa59
-size 287
+import * as S from './AddStyle';
+import * as G from '@/styles';
+import { History, Plus } from 'lucide-react';
+
+export default function Add() {
+  return (
+    <>
+      <S.Wrapper>
+        <Plus color={G.PALETTE.MAIN_WHITE} size={14}></Plus>작업 추가
+      </S.Wrapper>
+    </>
+  );
+}

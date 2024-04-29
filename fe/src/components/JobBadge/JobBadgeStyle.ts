@@ -1,3 +1,11 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:bd33aca2591a9f85b5101b1b5de8b61fc09a548d14161861d230557be0b6904e
-size 322
+import styled from 'styled-components';
+
+export const Wrapper = styled.div<{ $bgColor: string; $fontColor: string }>`
+  width: fit-content;
+  height: fit-content;
+  padding: 4px 6px;
+  border-radius: 6px;
+  font-size: 12px;
+  color: ${({ $fontColor }) => $fontColor};
+  background-color: ${({ $bgColor }) => $bgColor};
+`;
