@@ -4,6 +4,7 @@ pipeline {
   environment {
     METADATA = '/var/lib/jenkins/workspace/share-p'
 
+    SRC_ENV = './fe'
     SRC_RESOURCES = './be/src/main/resources'
   }
 
@@ -21,6 +22,9 @@ pipeline {
       steps {
         sh "rm -f ${env.SRC_RESOURCES}/application.yml && mkdir ${env.SRC_RESOURCES} || true"
         sh "cp ${env.METADATA}/be/application.yml ${env.SRC_RESOURCES}/application.yml"
+
+        sh "rm -f ${env.SRC_ENV}/.env"
+        sh "cp ${env.METADATA}/fe/.env ${env.SRC_ENV}/.env"
       }
     }
 
@@ -62,5 +66,5 @@ pipeline {
         sh "docker compose -f ${env.METADATA}/docker-compose.yml restart be fe"
       }
     }
-  }
+  } 
 }
