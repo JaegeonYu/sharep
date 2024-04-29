@@ -1,20 +1,3 @@
-import React from 'react';
-import { GlobalStyle } from './styles';
-import { Route, Routes } from 'react-router-dom';
-import * as Page from './pages';
-
-function App() {
-  return (
-    <>
-      <GlobalStyle />
-      <Routes>
-        <Route path="/" element={<div>main</div>} />
-        <Route path="/seo-jeong" element={<Page.SeoJeong />} />
-        <Route path="/sung-gu" element={<Page.SungGu />} />
-        <Route path="/sung-je" element={<Page.SungJe />} />
-      </Routes>
-    </>
-  );
-}
-
-export default App;
+version https://git-lfs.github.com/spec/v1
+oid sha256:b570e569f93659a830975a911356b8acd5710d4d01f5231efe4d935a41d2792a
+size 632
