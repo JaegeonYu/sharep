@@ -1,4 +1,4 @@
-package com.sharep.be.modules.job.domain;
+package com.sharep.be.modules.job.dto;
 
 import jakarta.validation.constraints.Min;
 import jakarta.validation.constraints.NotBlank;
@@ -7,7 +7,7 @@ import jakarta.validation.constraints.Size;
 import lombok.Getter;
 
 @Getter
-public class JobCreate {
+public class JobCreateRequest {
 
         @NotBlank
         @Size(min = 1, max = 100)
