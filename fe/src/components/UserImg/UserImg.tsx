@@ -12,7 +12,7 @@ import * as T from '@/types';
 export default function UserImg({ size, path }: T.UserImgProps) {
   return (
     <>
-      <S.ImgCircle size={size} path={path}></S.ImgCircle>
+      <S.ImgCircle $size={size} $path={path}></S.ImgCircle>
     </>
   );
 }
