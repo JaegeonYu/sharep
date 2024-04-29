@@ -1,3 +1,15 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:dd841b9969d2d03d69c44d0c8bcd7d9cce9913b06fad14f015b11245d8f7295e
-size 416
+import BaseLabelWithInput from '@/components/InputWithLabel/InputWithLabel';
+import React from 'react';
+
+export default function TaskCreationForm() {
+  return (
+    <>
+      <div>TaskCreationForm</div>
+      <div style={{ border: '1px solid black' }}>
+        <BaseLabelWithInput id="title" type="text" value="" onChange={() => console.log()}>
+          ddd
+        </BaseLabelWithInput>
+      </div>
+    </>
+  );
+}
