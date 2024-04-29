@@ -4,4 +4,5 @@ export interface CommitProps {
   createdAt: string;
   userImageUrl?: string;
   imageUrl?: string;
+  jobList: Array<string>;
 }
