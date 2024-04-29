@@ -1,7 +1,8 @@
 import styled from 'styled-components';
 
-export const Wrapper = styled.main`
+export const ManualWrapper = styled.main`
   width: 100%;
-  /* overflow-x: scroll;
-  overflow-y: hidden; */
+  height: 100%;
+  overflow-x: scroll;
+  overflow-y: hidden;
 `;
