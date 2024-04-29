@@ -9,7 +9,7 @@ import * as T from '@/types';
 export default function MainColorBtn({ children, bgc, disabled }: T.MainColorBtnProps) {
   return (
     <>
-      <S.Wrapper $flag={bgc} disabled={disabled}>
+      <S.Wrapper $flag={bgc} $disabled={disabled}>
         {children}
       </S.Wrapper>
     </>
