@@ -1,3 +1,16 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:e6efbbd55462c8d956d8adf3313f7322dc8d1d13f9cd158b74fbc323d5d3f5f6
-size 367
+import styled from 'styled-components';
+import * as G from '@/styles';
+
+export const Wrapper = styled.div`
+  width: 100;
+  /* height: 42px; */
+  padding: 8px 0px;
+  background-color: white;
+  border: solid 1px #d0d7de;
+  column-gap: 10px;
+  border-radius: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: ${G.PALETTE.LIGHT_BLACK};
+`;
