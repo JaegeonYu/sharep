@@ -1,8 +1,3 @@
-package com.sharep.be.modules.member;
-
-import java.util.List;
-import java.util.Optional;
-import org.springframework.data.jpa.repository.JpaRepository;
-
-public interface MemberRepository extends JpaRepository<Member, Long>, MemberRepositoryCustom{
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:da339b066366b255887d617d4ea87ecd76c1ed591e0e5163b473ec6e7bcbe714
+size 510
