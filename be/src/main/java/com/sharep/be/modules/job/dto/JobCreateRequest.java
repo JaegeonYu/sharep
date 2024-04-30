@@ -1,22 +1,3 @@
-package com.sharep.be.modules.job.dto;
-
-import jakarta.validation.constraints.Min;
-import jakarta.validation.constraints.NotBlank;
-import jakarta.validation.constraints.NotNull;
-import jakarta.validation.constraints.Size;
-import lombok.Getter;
-
-@Getter
-public class JobCreateRequest {
-
-        @NotBlank
-        @Size(min = 1, max = 100)
-        private String name;
-
-        @NotNull
-        @Size(max = 255)
-        private String description;
-
-        @Min(1)
-        private Long issueId;
-    }
+version https://git-lfs.github.com/spec/v1
+oid sha256:8a5c527614ee52c1f8c6f4dc3dda03d95772542f3df7fc3acb74ec9295f30e18
+size 515
