@@ -1,4 +1,4 @@
-package com.sharep.be.modules.job.dto;
+package com.sharep.be.modules.job.request;
 
 import com.sharep.be.modules.member.Role;
 import com.sharep.be.modules.member.Role.RoleType;
@@ -7,12 +7,11 @@ import lombok.Setter;
 import lombok.ToString;
 import org.springframework.web.bind.annotation.GetMapping;
 
-@Getter
-@Setter
-@ToString
-public class JobReadRequest {
-    private Long accountId;
-    private RoleType roleType;
-    private Long issueId;
+public record JobReadRequest(
+        Long accountId,
+        RoleType roleType,
+        Long issueId
+
+) {
 
 }
