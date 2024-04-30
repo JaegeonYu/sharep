@@ -1,22 +1,3 @@
-package com.sharep.be.modules.job.domain;
-
-import jakarta.validation.constraints.Min;
-import jakarta.validation.constraints.NotBlank;
-import jakarta.validation.constraints.NotNull;
-import jakarta.validation.constraints.Size;
-import lombok.Getter;
-
-@Getter
-public class JobCreate {
-
-        @NotBlank
-        @Size(min = 1, max = 100)
-        private String name;
-
-        @NotNull
-        @Size(max = 255)
-        private String description;
-
-        @Min(1)
-        private Long issueId;
-    }
+version https://git-lfs.github.com/spec/v1
+oid sha256:c0bbaa120c23bed298b8265da69bb1bb61571fdb3a351d93c966423ac16604c9
+size 494
