@@ -1,3 +1,10 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:68c1847c0ce0e1ec786ffb4a394e9673611f0dbfcd8caa822b4386dc22da2e18
-size 370
+package com.sharep.be.modules.issue;
+
+import com.sharep.be.modules.issue.type.PriorityType;
+import jakarta.validation.constraints.NotBlank;
+import jakarta.validation.constraints.Size;
+
+public record IssueUpdate(@NotBlank Long id, @NotBlank @Size(min = 1, max = 32) String issueName,
+                          String description, String epic, PriorityType priority) {
+
+}

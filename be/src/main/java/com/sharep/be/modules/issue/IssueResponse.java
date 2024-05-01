@@ -1,3 +1,11 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:d2f5e4b0ce7d4172e302a7332c2601f615e78cb543bb38e86cbbfdea734fe3c1
-size 352
+package com.sharep.be.modules.issue;
+
+import com.sharep.be.modules.issue.type.IssueType;
+import com.sharep.be.modules.issue.type.PriorityType;
+import lombok.Builder;
+
+@Builder
+public record IssueResponse(Long id, String issueName, String description, IssueType type,
+                            String epic, PriorityType priority, Long projectId) {
+
+}
