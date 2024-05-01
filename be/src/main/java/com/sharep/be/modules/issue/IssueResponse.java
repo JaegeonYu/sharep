@@ -8,4 +8,8 @@ import lombok.Builder;
 public record IssueResponse(Long id, String issueName, String description, IssueType type,
                             String epic, PriorityType priority, Long projectId) {
 
+    @Builder
+    public record IssueCreated(Long id) {
+
+    }
 }
