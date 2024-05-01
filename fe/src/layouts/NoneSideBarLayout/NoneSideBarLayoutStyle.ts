@@ -1,13 +1,3 @@
-import styled from 'styled-components';
-import { PALETTE } from '@/styles';
-
-export const Wrapper = styled.main`
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 36px;
-  width: 100%;
-  height: 100%;
-  padding: 56px 0px;
-  background-color: ${PALETTE.MAIN_BACKGROUND};
-`;
+version https://git-lfs.github.com/spec/v1
+oid sha256:5342f6f4a61f85b17844801cd60c0629acedec22eb224641f6ec1ed44d983d08
+size 295
