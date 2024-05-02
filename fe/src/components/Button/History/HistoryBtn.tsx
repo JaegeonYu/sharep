@@ -1,3 +1,13 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:69e2bd9ec2ae5c1e145189f68ff658547f34d0cd53eea1a4e97ab2584d40ada0
-size 307
+import * as S from './HistoryBtnStyle';
+import * as G from '@/styles';
+import { History, Plus } from 'lucide-react';
+
+export default function HistoryBtn() {
+  return (
+    <>
+      <S.Wrapper>
+        <History color={G.PALETTE.MAIN_WHITE} size={14}></History>작업 기록
+      </S.Wrapper>
+    </>
+  );
+}
