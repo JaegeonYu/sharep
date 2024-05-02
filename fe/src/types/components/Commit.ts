@@ -7,7 +7,7 @@ export interface CommitProps {
   member: {
     // memberId: string;
     nickname: string;
-    role: ('FRONT_END' | 'BACK_END' | 'INFRA' | 'DESIGNER')[];
+    roles: ('FRONT_END' | 'BACK_END' | 'INFRA' | 'DESIGNER')[];
     userImageUrl?: string;
   };
 }
