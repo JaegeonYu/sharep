@@ -4,7 +4,7 @@ import * as T from '@/types';
 /**
  *
  * @param size
- * sm , md , lg  3-types
+ * sm , md , lg  3-types 126x126 72x72 32x32
  * @param path
  * Img URL PLZ
  *
