@@ -1,3 +1,12 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:58edfc2682091d74bd55f3834e596bd31b501c58b4520b805d8619184400fdfc
-size 368
+package com.sharep.be.modules.issue.repository;
+
+import com.sharep.be.modules.issue.dto.FeatureDto;
+import com.sharep.be.modules.issue.type.IssueType;
+import java.util.List;
+import java.util.Optional;
+
+public interface CustomIssueRepository {
+
+    Optional<List<FeatureDto>> findFeatureIssuesByProjectIdAndIssueType(Long projectId,
+            IssueType issueType);
+}
