@@ -1,3 +1,17 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:ddb5405bfb67d2034ddf5e7a0fc0416b0258f2f10b43d0f44f542adbf438a782
-size 446
+package com.sharep.be.modules.assignee;
+
+import com.fasterxml.jackson.annotation.JsonCreator;
+
+public enum State {
+    YET, NOW, DONE;
+
+    @JsonCreator
+    public static State from(String sub){
+        for(State state : State.values()){
+            System.out.println("check " + state.toString());
+            if(state.toString().equals(sub))return state;
+        }
+
+        throw new RuntimeException("no type enum"); // TODO exception
+    }
+}
