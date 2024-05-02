@@ -1,13 +1,3 @@
-import SeoJeong from './SeoJeong/SeoJeong';
-import SungGu from './SungGu/SungGu';
-import SungJe from './SungJe/SungJe';
-
-import FeatureManual from './FeatureManual/FeatureManual';
-import Login from './Login/Login';
-import Register from './Register/Register';
-import Mypage from './Mypage/Mypage';
-
-import ScreenManual from './ScreenManual/ScreenManual';
-import InfraManual from './InfraManual/InfraManual';
-
-export { SeoJeong, SungGu, SungJe, FeatureManual, Login, Register, ScreenManual, InfraManual, Mypage };
+version https://git-lfs.github.com/spec/v1
+oid sha256:3db6627a18ff8b94379333b28978a4bc2c797313bb516bddce7a3fc29b78defc
+size 565
