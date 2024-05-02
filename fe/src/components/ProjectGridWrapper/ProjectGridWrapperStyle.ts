@@ -17,3 +17,7 @@ export const CardList = styled.div`
   gap: 50px;
   padding: 24px 16px;
 `;
+
+export const ProjectAddBtn = styled.div`
+  width: 100%;
+`;
