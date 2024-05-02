@@ -1,11 +1,9 @@
 import styled from 'styled-components';
-import { PALETTE } from '@/styles';
 
 export const Wrapper = styled.main`
   display: flex;
   width: 100%;
-  height: 100%;
-  background-color: ${PALETTE.MAIN_BACKGROUND};
+  height: fit-content;
 `;
 
 export const Container = styled.section`
