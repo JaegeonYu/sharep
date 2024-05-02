@@ -1,8 +1,3 @@
-export interface IssueProps {
-  id: number;
-  name: string;
-  commit: { title: string; createAt: string } | null;
-  assignees: { name: string; url: string }[];
-  priority: 'HIGH' | 'MEDIUM' | 'LOW';
-  dragAble: boolean;
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:1baebf271408a1b9e047cb1d1302eff5875416c52bfc63645233b756d83cbef2
+size 222
