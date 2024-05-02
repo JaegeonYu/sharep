@@ -1,17 +1,3 @@
-package com.sharep.be.modules.job.request;
-
-import com.sharep.be.modules.member.Role;
-import com.sharep.be.modules.member.Role.RoleType;
-import lombok.Getter;
-import lombok.Setter;
-import lombok.ToString;
-import org.springframework.web.bind.annotation.GetMapping;
-
-public record JobReadRequest(
-        Long accountId,
-        RoleType roleType,
-        Long issueId
-
-) {
-
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:124e1a6e6ee677aa158f26e416f1afe75dac0f52b99054766565c0e4c5ef627a
+size 375
