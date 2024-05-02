@@ -1,11 +1,3 @@
-package com.sharep.be.modules.job.repository;
-
-import com.sharep.be.modules.job.Job;
-import java.util.List;
-import org.springframework.data.jpa.repository.JpaRepository;
-import org.springframework.stereotype.Repository;
-
-@Repository
-public interface JobRepository extends JpaRepository<Job, Long>, JobRepositoryCustom {
-
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:197e82340c271b0cb62d5db3cf38c27cb472e365e004bef2a33d691aed47ce93
+size 323
