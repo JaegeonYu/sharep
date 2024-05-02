@@ -1,3 +1,20 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:b6c05064eebbc384bf9084bbb005cc8cb7e5eab0a0188299ed12a016519c3e60
-size 335
+import styled from 'styled-components';
+
+export const UserWrapper = styled.div`
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  width: fit-content;
+  padding-bottom: 10px;
+  cursor: pointer;
+
+  p {
+    font-size: 14px;
+    padding-bottom: 4px;
+  }
+`;
+
+export const JobBadgesWrapper = styled.div`
+  display: flex;
+  gap: 6px;
+`;
