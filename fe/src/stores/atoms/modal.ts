@@ -1,11 +1,9 @@
-import { atom } from 'recoil';
+import { atomFamily } from 'recoil';
 
-// TODO: ModalState type 분리?
-interface ModalState {
-  [key: string]: boolean;
-}
-
-export const modalState = atom<ModalState>({
-  key: 'modalState',
-  default: {},
+export const modalDataState = atomFamily<{ isOpen: boolean; formData: { [key: string]: any } }, string>({
+  key: 'modalDataState',
+  default: () => ({
+    isOpen: false,
+    formData: {},
+  }),
 });
