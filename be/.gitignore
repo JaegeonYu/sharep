@@ -38,3 +38,5 @@ out/
 
 application.*
 application-test.*
+
+src/main/generated
