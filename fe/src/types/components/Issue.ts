@@ -9,5 +9,7 @@ export interface IssueProps {
   priority: 'HIGH' | 'MEDIUM' | 'LOW';
   state: 'YET' | 'NOW' | 'DONE';
   type: 'SCREEN' | 'PRIVATE';
-  dragAble: false | { setter: React.Dispatch<React.SetStateAction<number>> };
+  dragAble:
+    | false
+    | { setter: React.Dispatch<React.SetStateAction<null | number>>; onDrop: (e: React.DragEvent) => void };
 }
