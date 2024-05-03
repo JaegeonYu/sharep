@@ -8,4 +8,5 @@ public interface CustomIssueRepository {
 
     List<Issue> findIssuesByMemberIdAndIssueType(Long memberId, IssueType issueType);
 
+    List<Issue> findIssuesByProjectIdAndIssueType(Long projectId, IssueType issueType);
 }
