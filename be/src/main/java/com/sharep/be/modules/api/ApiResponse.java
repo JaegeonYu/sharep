@@ -1,3 +1,13 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:495443ceec3184179cb8856603d92d209130abdad3eb1fdba98ccc29bee66767
-size 283
+package com.sharep.be.modules.api;
+
+import com.sharep.be.modules.api.type.MethodType;
+import lombok.Builder;
+
+@Builder
+public record ApiResponse(Long id, String request, String response, String url, MethodType method) {
+
+    @Builder
+    public record ApiUpdated(Long id) {
+
+    }
+}

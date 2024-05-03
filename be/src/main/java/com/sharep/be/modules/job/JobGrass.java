@@ -1,3 +1,24 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:f5feea9817e6dfcbe43f5d77012bb72f82c11c1fe3258555f758b614bfc6383d
-size 477
+package com.sharep.be.modules.job;
+
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
+
+@Getter
+@Setter
+@NoArgsConstructor
+public class JobGrass{
+    int step;
+    int count;
+
+    public JobGrass(Integer count) {
+        this.count = count;
+        totalStep();
+    }
+
+    private void totalStep(){
+        if(count == 0)return;
+        step = (count / 4) + 1; // step 0, 1~4, count 4 == step 1
+        step = Math.min(step, 4); // max step 4
+    }
+}

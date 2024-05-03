@@ -1,3 +1,11 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:43fb38691ae6d6bb441f429c9941e61cdc8e424d89dfd05d39367168c3e95d52
-size 243
+package com.sharep.be.modules.job;
+
+import java.time.LocalDateTime;
+import lombok.Builder;
+
+@Builder
+public record JobResponse(Long id, String name, String description, LocalDateTime createdAt,
+                          String imageUrl) {
+
+
+}
