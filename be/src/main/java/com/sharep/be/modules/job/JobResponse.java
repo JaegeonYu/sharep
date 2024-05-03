@@ -1,11 +1,3 @@
-package com.sharep.be.modules.job;
-
-import java.time.LocalDateTime;
-import lombok.Builder;
-
-@Builder
-public record JobResponse(Long id, String name, String description, LocalDateTime createdAt,
-                          String imageUrl) {
-
-
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:cdcc8ae25016f9a9efd0dccea2d3fb6a8f3ad148001811014c75c56beba83fa6
+size 574
