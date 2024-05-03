@@ -1,20 +1,3 @@
-import styled from 'styled-components';
-
-export const UserWrapper = styled.div`
-  display: flex;
-  align-items: center;
-  gap: 16px;
-  width: fit-content;
-  padding-bottom: 10px;
-  cursor: pointer;
-
-  p {
-    font-size: 14px;
-    padding-bottom: 4px;
-  }
-`;
-
-export const JobBadgesWrapper = styled.div`
-  display: flex;
-  gap: 6px;
-`;
+version https://git-lfs.github.com/spec/v1
+oid sha256:7974c9788ed5ecacfd19b7e290b8370bfe1845508f7b65909682bf7fc1147310
+size 378
