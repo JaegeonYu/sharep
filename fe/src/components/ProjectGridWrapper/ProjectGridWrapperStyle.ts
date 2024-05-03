@@ -1,3 +1,23 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:a557e89072c576e3f8974aaf6dd58090475abf63cc0f559afd2a39945cc8ddac
-size 391
+import { PALETTE } from '@/styles';
+import styled from 'styled-components';
+
+export const Grid = styled.div`
+  width: 100%;
+  height: 100%;
+  border-radius: 24px;
+  gap: 20px;
+`;
+
+export const CardList = styled.div`
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  justify-items: center;
+  gap: 50px;
+  padding: 24px 16px;
+`;
+
+export const ProjectAddBtn = styled.div`
+  width: 100%;
+`;

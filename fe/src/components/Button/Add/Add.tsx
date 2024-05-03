@@ -1,6 +1,6 @@
 import * as S from './AddStyle';
 import * as G from '@/styles';
-import { History, Plus } from 'lucide-react';
+import { Plus } from 'lucide-react';
 
 export default function Add() {
   return (
