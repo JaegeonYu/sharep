@@ -13,8 +13,8 @@ export const GridSquare = styled.div<{
 
 // {
 //     "year": 2024,
-//     "jobCount": 4,
-//     "jobs": [
+//     "roleCount": 4,
+//     "roles": [
 //     {
 //     "step": 0,
 //     "count": 0

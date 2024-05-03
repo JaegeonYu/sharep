@@ -1,3 +1,3 @@
-import Canvan from './Canvan/Canvan';
+import Kanban from './Kanban/Kanban';
 
-export { Canvan };
+export { Kanban };

@@ -6,7 +6,7 @@ export interface TeamMemberProps {
   id: number;
   name: string;
   imageUrl: string;
-  jobs: Extract<T.JobBadgeProps, 'job'>[];
+  roles: Extract<T.RoleBadgeProps, 'role'>[];
 }
 
 export interface GanttChartProps {}

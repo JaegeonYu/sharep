@@ -15,7 +15,7 @@ export const UserWrapper = styled(Link)`
   }
 `;
 
-export const JobBadgesWrapper = styled.div`
+export const RoleBadgesWrapper = styled.div`
   display: flex;
   gap: 6px;
 `;
