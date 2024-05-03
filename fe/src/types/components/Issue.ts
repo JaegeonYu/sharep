@@ -1,8 +1,15 @@
+import * as T from '@types';
+import React from 'react';
+
 export interface IssueProps {
   id: number;
   name: string;
   commit: { title: string; createAt: string } | null;
-  assignees: { name: string; url: string }[];
+  assignees: { name: string; imageUrl: string }[];
   priority: 'HIGH' | 'MEDIUM' | 'LOW';
-  dragAble: boolean;
+  state: 'YET' | 'NOW' | 'DONE';
+  type: 'SCREEN' | 'PRIVATE';
+  dragAble:
+    | false
+    | { setter: React.Dispatch<React.SetStateAction<null | number>>; onDrop: (e: React.DragEvent) => void };
 }

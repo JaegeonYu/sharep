@@ -3,8 +3,9 @@ import * as T from '@types';
 export interface TeamDashboardProps {}
 
 export interface TeamMemberProps {
+  id: number;
   name: string;
-  image: string;
+  imageUrl: string;
   jobs: Extract<T.JobBadgeProps, 'job'>[];
 }
 
