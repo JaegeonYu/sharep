@@ -1,14 +1,3 @@
-package com.sharep.be.modules.assignee.repository;
-
-import com.sharep.be.modules.assignee.Assignee;
-import java.util.Optional;
-import org.springframework.data.jpa.repository.JpaRepository;
-import org.springframework.stereotype.Repository;
-
-@Repository
-public interface AssigneeRepository extends JpaRepository<Assignee, Long>, AssigneeRepositoryCustom{
-
-    Optional<Assignee> findByMemberIdAndIssueId(Long memberId, Long issueId);
-
-    boolean existsByMemberIdAndIssueId(Long id, Long id1);
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:ee5c44ffc1041dc66aa7519a90d79f46ac78dcf86fe9cd8e671bc016d8a5b3ef
+size 519
