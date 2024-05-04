@@ -1,3 +1,5 @@
+import * as T from '@/types';
+
 export interface CommitProps {
   id?: number;
   name: string;
@@ -6,9 +8,9 @@ export interface CommitProps {
   imageUrl?: string;
   issueId?: number;
   member: {
-    memberId?: string;
+    memberId?: number;
     nickname: string;
-    roles: ('FRONT_END' | 'BACK_END' | 'INFRA' | 'DESIGNER')[];
+    roles: Extract<T.RoleBadgeProps, 'role'>[];
     userImageUrl?: string;
   };
   disabled: boolean; // accordion 열고 닫을 수 있는지
