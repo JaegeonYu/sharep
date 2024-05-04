@@ -1,15 +1,3 @@
-package com.sharep.be.modules.assignee;
-
-import lombok.Builder;
-
-@Builder
-public record AssigneeResponse(String name, String imageUrl) {
-
-    public static AssigneeResponse from(Assignee assignee) {
-        return AssigneeResponse.builder()
-                .name(assignee.getMember().getAccount().getNickname())
-                .imageUrl(assignee.getMember().getAccount().getImageUrl())
-                .build();
-    }
-
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:0b9bc61fa25acb09fed61bee1231ddccdb642ce6ab6beefe50e0e09188d6d4e5
+size 525
