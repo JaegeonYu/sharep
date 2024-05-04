@@ -1,8 +1,3 @@
-package com.sharep.be.modules.api.repository;
-
-import com.sharep.be.modules.api.Api;
-import org.springframework.data.jpa.repository.JpaRepository;
-
-public interface ApiRepository extends JpaRepository<Api, Long> {
-
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:898193a2d5871e4b88ff7421a1b4a469e610848843efbdd4d838712aa255cea3
+size 238
