@@ -1,5 +1,5 @@
 import ProjectCreationForm from './ProjectCreationForm/ProjectCreationForm';
-import TaskCreationForm from './TaskCreationForm/TaskCreationForm';
-import InfraTaskCreationForm from './InfraTaskCreationForm/InfraTaskCreationForm';
+import JobCreationForm from './JobCreationForm/JobCreationForm';
+import InfraJobCreationForm from './InfraJobCreationForm/InfraJobCreationForm';
 
-export { ProjectCreationForm, TaskCreationForm, InfraTaskCreationForm };
+export { ProjectCreationForm, JobCreationForm, InfraJobCreationForm };
