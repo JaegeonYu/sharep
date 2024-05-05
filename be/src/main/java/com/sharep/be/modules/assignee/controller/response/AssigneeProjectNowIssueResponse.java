@@ -1,3 +1,7 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:2e54b0c434ec4cb41122b892bd7aeb0c51e3325f4c57a7f407c2aa898cf10c58
-size 283
+package com.sharep.be.modules.assignee.controller.response;
+
+import com.sharep.be.modules.account.dto.AccountDto.AccountResponseDto;
+import com.sharep.be.modules.issue.IssueNowResponse;
+
+public record AssigneeProjectNowIssueResponse(AccountResponseDto account, IssueNowResponse issue) {
+}
