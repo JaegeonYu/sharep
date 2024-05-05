@@ -1,19 +1,3 @@
-import { PALETTE } from '@/styles';
-import styled from 'styled-components';
-
-export const Grid = styled.div`
-  width: 100%;
-  background-color: ${PALETTE.MAIN_WHITE};
-  border-radius: 24px;
-  padding: 16px;
-  gap: 20px;
-`;
-
-export const CardList = styled.div`
-  width: 100%;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  justify-items: center;
-  gap: 30px;
-  padding: 24px 16px;
-`;
+version https://git-lfs.github.com/spec/v1
+oid sha256:987d205bf476bae4873b29b6888f4305c5deeaba409a9ee950a06aaf52db31d3
+size 1237
