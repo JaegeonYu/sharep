@@ -1,3 +1,8 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:0f184bee3b940d8d0acc959cacc65ec38c982115327fe6f264912f62ea4de2af
-size 322
+package com.sharep.be.modules.issue.repository;
+
+import com.sharep.be.modules.issue.Issue;
+import org.springframework.data.jpa.repository.JpaRepository;
+
+public interface IssueRepository extends JpaRepository<Issue, Long>, CustomIssueRepository {
+
+}
