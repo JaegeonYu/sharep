@@ -1,19 +1,3 @@
-import React from 'react';
-import * as Comp from '@components';
-import * as L from '@layouts';
-
-const infraIssueList = [
-  ...Array.from({ length: 7 }, (_, index) => ({
-    issueName: `인프라 이슈 ${index + 1}`,
-    createdAt: '2024.04.27',
-    issueType: 'PRIVATE' as 'PRIVATE',
-  })),
-];
-
-export default function InfraManual() {
-  return (
-    <L.SideBarLayout>
-      <Comp.GalleryGridWrapper issueList={infraIssueList} />
-    </L.SideBarLayout>
-  );
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:5de2b513496c080f9f0ce18c2c1fb2ac8b7c8e36081236739782ca7e9bbee44f
+size 484
