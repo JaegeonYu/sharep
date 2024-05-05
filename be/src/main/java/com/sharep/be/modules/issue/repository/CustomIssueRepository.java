@@ -6,9 +6,10 @@ import java.util.List;
 
 public interface CustomIssueRepository {
 
-    List<Issue> findIssuesByMemberIdAndIssueType(Long memberId, IssueType issueType);
+    List<Issue> findIssuesByMemberId(Long memberId);
+
 
     List<Issue> findIssuesByProjectIdAndIssueType(Long projectId, IssueType issueType);
 
-    List<Issue> findByProjectId(Long projectId);
+    List<Issue> findIssuesByProjectId(Long projectId);
 }
