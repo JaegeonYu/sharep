@@ -1,4 +1,4 @@
-package com.sharep.be.modules.job.request;
+package com.sharep.be.modules.job.controller.request;
 
 import com.sharep.be.modules.member.Role;
 import com.sharep.be.modules.member.Role.RoleType;
