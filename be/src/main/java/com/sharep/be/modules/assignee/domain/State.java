@@ -1,4 +1,4 @@
-package com.sharep.be.modules.assignee;
+package com.sharep.be.modules.assignee.domain;
 
 import com.fasterxml.jackson.annotation.JsonCreator;
 

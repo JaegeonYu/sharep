@@ -1,4 +1,4 @@
-package com.sharep.be.modules.job.response;
+package com.sharep.be.modules.job.domain;
 
 import lombok.Getter;
 import lombok.NoArgsConstructor;
