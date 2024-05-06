@@ -1,15 +1,3 @@
-package com.sharep.be.modules.assignee.repository;
-
-import com.querydsl.core.Tuple;
-import com.sharep.be.modules.assignee.domain.Assignee;
-import java.util.List;
-import java.util.Optional;
-
-public interface AssigneeRepositoryCustom {
-
-    List<Tuple> findAllProjectNowIssueByProjectId(Long projectsId);
-
-    List<Tuple> findAllProjectNowIssueByProjectIdAndAccountID(Long projectId, Long accountId);
-
-    Optional<Assignee> findByAccountIdAndProjectId(Long accountId, Long projectId);
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:ee23914688e3281faa809ac4f605b90fc497f355b1ffbbb7d9c1f9e2fab66298
+size 542
