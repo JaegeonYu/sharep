@@ -5,14 +5,14 @@ import * as L from '@layouts';
 export default function InfraManual() {
   return (
     <L.SideBarLayout>
-      <Comp.GalleryGridWrapper issueList={infraIssueList} />
+      <Comp.GalleryGridWrapper issueList={infraIssueList} type="PRIVATE" />
     </L.SideBarLayout>
   );
 }
 
 const infraIssueList = [
   ...Array.from({ length: 7 }, (_, index) => ({
-    issueId: index + 1,
+    id: index + 1,
     issueName: `인프라 이슈 ${index + 1}`,
     createdAt: '2024.04.27',
     type: 'PRIVATE' as 'PRIVATE',
