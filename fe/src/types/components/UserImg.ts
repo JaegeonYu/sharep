@@ -1,4 +1,4 @@
 export interface UserImgProps {
   size: string;
-  path: string;
+  path: string | null | undefined;
 }
