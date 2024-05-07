@@ -1,6 +1,7 @@
 import styled from 'styled-components';
+import { Link } from 'react-router-dom';
 
-export const UserWrapper = styled.div`
+export const UserWrapper = styled(Link)`
   display: flex;
   align-items: center;
   gap: 16px;
@@ -14,7 +15,7 @@ export const UserWrapper = styled.div`
   }
 `;
 
-export const JobBadgesWrapper = styled.div`
+export const RoleBadgesWrapper = styled.div`
   display: flex;
   gap: 6px;
 `;

@@ -3,9 +3,10 @@ import * as T from '@types';
 export interface TeamDashboardProps {}
 
 export interface TeamMemberProps {
+  id: number;
   name: string;
-  image: string;
-  jobs: Extract<T.JobBadgeProps, 'job'>[];
+  imageUrl: string;
+  roles: Extract<T.RoleBadgeProps, 'role'>[];
 }
 
 export interface GanttChartProps {}
