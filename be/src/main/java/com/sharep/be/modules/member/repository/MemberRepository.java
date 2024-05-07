@@ -1,6 +1,6 @@
-package com.sharep.be.modules.member;
+package com.sharep.be.modules.member.repository;
 
-import java.util.List;
+import com.sharep.be.modules.member.Member;
 import java.util.Optional;
 import org.springframework.data.jpa.repository.JpaRepository;
 

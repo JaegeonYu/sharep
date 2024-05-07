@@ -12,4 +12,5 @@ public interface CustomIssueRepository {
     List<Issue> findIssuesByProjectIdAndIssueType(Long projectId, IssueType issueType);
 
     List<Issue> findIssuesByProjectId(Long projectId);
+
 }
