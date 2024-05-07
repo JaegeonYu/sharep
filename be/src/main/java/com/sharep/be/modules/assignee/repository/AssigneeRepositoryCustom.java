@@ -1,7 +1,7 @@
 package com.sharep.be.modules.assignee.repository;
 
 import com.querydsl.core.Tuple;
-import com.sharep.be.modules.assignee.Assignee;
+import com.sharep.be.modules.assignee.domain.Assignee;
 import java.util.List;
 import java.util.Optional;
 
