@@ -1,10 +1,10 @@
 package com.sharep.be.modules.assignee.repository.projection;
 
-import com.sharep.be.modules.account.Account;
 import com.sharep.be.modules.issue.Issue;
+import com.sharep.be.modules.member.Member;
 
-public record AccountAndIssueProjection(
-        Account account,
+public record MemberAndIssueProjection(
+        Member member,
         Issue issue
 ) {
 
