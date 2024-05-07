@@ -1,5 +1,6 @@
-package com.sharep.be.modules.account;
+package com.sharep.be.modules.account.repository;
 
+import com.sharep.be.modules.account.Account;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 import java.util.Optional;
