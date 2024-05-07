@@ -4,7 +4,7 @@ export interface TeamDashboardProps {}
 
 export interface TeamMemberProps {
   id: number;
-  name: string;
+  nickname: string;
   imageUrl: string;
   roles: Extract<T.RoleBadgeProps, 'role'>[];
 }
