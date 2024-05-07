@@ -1,22 +1,3 @@
-import styled from 'styled-components';
-import * as G from '@styles';
-
-export const GridSquare = styled.div<{
-  $active?: number;
-}>`
-  width: 12px;
-  height: 12px;
-  margin: 2px;
-  background-color: ${props => `G.PALETTE.GRASS_${props.$active}`};
-  border: solid 1px ${G.PALETTE.GRASS_1};
-`;
-
-// {
-//     "year": 2024,
-//     "jobCount": 4,
-//     "jobs": [
-//     {
-//     "step": 0,
-//     "count": 0
-//     },
-//     }
+version https://git-lfs.github.com/spec/v1
+oid sha256:eeb8ae62983985f294edefefd9cb3c2af365609e4155f63dad92bd984a2cd4d9
+size 423
