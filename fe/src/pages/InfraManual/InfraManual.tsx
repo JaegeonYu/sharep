@@ -15,6 +15,6 @@ const infraIssueList = [
     issueId: index + 1,
     issueName: `인프라 이슈 ${index + 1}`,
     createdAt: '2024.04.27',
-    issueType: 'PRIVATE' as 'PRIVATE',
+    type: 'PRIVATE' as 'PRIVATE',
   })),
 ];
