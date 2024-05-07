@@ -1,3 +1,14 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:0a02333bd94f20407ed69de58d124492ae16e8175a85b9f7506352813aa1fb23
-size 269
+import { atom } from 'recoil';
+
+interface User {
+  id: number;
+  email: string;
+  nickname: string;
+  imageUrl: string | null;
+  // 다른 필요한 사용자 정보 추가 가능
+}
+
+export const userState = atom<User | null>({
+  key: 'userState',
+  default: null,
+});
