@@ -1,15 +1,3 @@
-import axios from 'axios';
-
-const instance = ({ contentType }: { contentType: 'application/json' | 'multipart/form-data' }) => {
-  return axios.create({
-    baseURL: import.meta.env.VITE_END_POINT,
-
-    headers: {
-      'Content-Type': contentType,
-      Authorization: `Bearer ${localStorage.getItem('token') || ''}`,
-    },
-  });
-};
-
-export const instanceOfJson = instance({ contentType: 'application/json' });
-export const instanceOfFormData = instance({ contentType: 'multipart/form-data' });
+version https://git-lfs.github.com/spec/v1
+oid sha256:511221addb557283fcf46601e25ff164104b0e6008308263ed25e70a933b6faf
+size 946
