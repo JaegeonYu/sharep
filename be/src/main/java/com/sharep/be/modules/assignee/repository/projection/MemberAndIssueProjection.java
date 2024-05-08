@@ -1,11 +1,3 @@
-package com.sharep.be.modules.assignee.repository.projection;
-
-import com.sharep.be.modules.issue.Issue;
-import com.sharep.be.modules.member.Member;
-
-public record MemberAndIssueProjection(
-        Member member,
-        Issue issue
-) {
-
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:b002b65cf77b93c73f348488aad6a4a4bd1edff1379a5fd58217f41ed982f945
+size 942
