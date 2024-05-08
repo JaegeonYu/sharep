@@ -1,16 +1,3 @@
-import React from 'react';
-import * as S from './GanttChartStyle';
-import dayjs from 'dayjs';
-
-import 'dayjs/locale/ko';
-
-dayjs.locale('ko'); // global로 한국어 locale 사용
-
-export default function GantChart() {
-  const todayKor = dayjs('2023-11-02');
-  console.log(todayKor.format('ddd')); // '목요일'
-  const todayEng = dayjs('2023-11-02').locale('en');
-  // todayEng 인스턴스에서만 영어 locale사용
-
-  return <div style={{ width: '3000px' }}></div>;
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:735a578339c5b181b062f8ea5500bd076a1d67f44334126e4a2db43c0a39976f
+size 551
