@@ -1,14 +1,3 @@
-import * as T from '@types';
-import React from 'react';
-
-export interface KanbanProps {
-  state: 'YET' | 'NOW' | 'DONE';
-  issues: Omit<T.IssueProps, 'dragAble'>[];
-  dragEnterdState: null | 'YET' | 'NOW' | 'DONE';
-  setDragEnterdState: React.Dispatch<React.SetStateAction<null | 'YET' | 'NOW' | 'DONE'>>;
-  setIssues: React.Dispatch<React.SetStateAction<Omit<T.IssueProps, 'dragAble'>[]>>;
-}
-
-export interface ContributionsChartProps {
-  dataList: { [date: string]: number };
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:2f9238eb195182b0d398f26525607951175dcb06abb0e21ecabd5291c534abee
+size 943
