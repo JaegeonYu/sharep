@@ -1,15 +1,3 @@
-import * as T from '@types';
-import React from 'react';
-
-export interface IssueProps {
-  id: number;
-  name: string;
-  commit: { title: string; createAt: string } | null;
-  assignees: { name: string; imageUrl: string }[];
-  priority: 'HIGH' | 'MEDIUM' | 'LOW';
-  state: 'YET' | 'NOW' | 'DONE';
-  type: 'SCREEN' | 'PRIVATE';
-  dragAble:
-    | false
-    | { setter: React.Dispatch<React.SetStateAction<null | number>>; onDrop: (e: React.DragEvent) => void };
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:6a1b1ae7ecf3a0f78e6068708c3febaa35b8649e9746ef1fd0ff2b855dd20fb3
+size 556
