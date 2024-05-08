@@ -1,8 +1,3 @@
-package com.sharep.be.modules.exception;
-
-public class IssueNotFoundException extends RuntimeException {
-
-    public IssueNotFoundException() {
-        super("이슈를 찾을 수 없습니다.");
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:41bfacaa486fe29ecc6a5cadb322d9d5956482852d0868898ca7cf5fbccfcd79
+size 205

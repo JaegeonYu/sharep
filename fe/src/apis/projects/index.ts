@@ -1,8 +1,3 @@
-import { instance } from '../instance';
-
-// export async function getGrass(email: string) {
-//   return await instance.get(`/projects/`);
-// }
-export async function getProjectList() {
-  return await instance.get(`/projects`);
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:401615798a219336b7198793ea1bed98da0a5c6551516c77a7185b60d46a56e7
+size 3933
