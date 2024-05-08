@@ -1,19 +1,3 @@
-import React from 'react';
-import * as Comp from '@components';
-import * as L from '@layouts';
-
-const screenIssueList = [
-  ...Array.from({ length: 7 }, (_, index) => ({
-    issueName: `화면 이슈 ${index + 1}`,
-    createdAt: '2024.04.27',
-    issueType: 'SCREEN' as 'SCREEN',
-  })),
-];
-
-export default function ScreenManual() {
-  return (
-    <L.SideBarLayout>
-      <Comp.GalleryGridWrapper issueList={screenIssueList} />
-    </L.SideBarLayout>
-  );
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:c9d71d0436692356fc4cf67c26202c9f3daa871212a474ae725f0e311ecf80f1
+size 1397
