@@ -3,7 +3,7 @@ import * as T from '@/types';
 export interface NotiProps {
   id: number;
   issueId: number;
-  type: 'FEATURE' | 'SCREEN' | 'PRIVATE';
+  type: 'FEATURE' | 'SCREEN' | 'INFRA';
   message: string;
   unread: boolean;
   createdAt: string;
