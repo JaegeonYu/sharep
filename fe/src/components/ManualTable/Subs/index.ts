@@ -1,5 +1,5 @@
-import TextCel from './TextCel/TextCel';
+import SelectAssigneesCel from './SelectAssigneesCel/SelectAssigneesCel';
 import SelectCel from './SelectCel/SelectCel';
 import TextAreaCel from './TextAreaCel/TextAreaCel';
 
-export { TextCel, SelectCel, TextAreaCel };
+export { SelectAssigneesCel, SelectCel, TextAreaCel };
