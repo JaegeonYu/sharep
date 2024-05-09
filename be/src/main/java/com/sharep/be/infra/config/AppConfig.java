@@ -1,14 +1,3 @@
-package com.sharep.be.infra.config;
-
-import org.modelmapper.ModelMapper;
-import org.springframework.context.annotation.Bean;
-import org.springframework.context.annotation.Configuration;
-
-@Configuration
-public class AppConfig {
-
-    @Bean
-    public ModelMapper modelMapper() {
-        return new ModelMapper();
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:6809e9ed9553867a2753d74f3504da93eea433aa71e5af461bd5435f25cdf925
+size 319
