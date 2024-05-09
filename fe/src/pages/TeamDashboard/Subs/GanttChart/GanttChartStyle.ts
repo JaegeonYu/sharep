@@ -1,3 +1,23 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:ef3e706bad9accbcdcd640aaa2170f742bda33a17b251b53839ee3082b4cbbb5
-size 458
+import styled from 'styled-components';
+import { PALETTE } from '@/styles';
+
+export const Wrapper = styled.div`
+  width: 4000px;
+  height: 100%;
+`;
+
+export const DaySection = styled.section`
+  width: 64px;
+  height: 100%;
+  border-left: 2px solid ${PALETTE.GANTT_CHART};
+  position: relative;
+`;
+
+export const IssueBar = styled.article`
+  width: 100%;
+  height: 32px;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  background-color: ${PALETTE.GRASS_1};
+`;

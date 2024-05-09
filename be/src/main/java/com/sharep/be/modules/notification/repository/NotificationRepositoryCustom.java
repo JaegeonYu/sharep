@@ -1,9 +1,3 @@
-package com.sharep.be.modules.notification.repository;
-
-import com.sharep.be.modules.notification.domain.Notification;
-import java.util.List;
-
-public interface NotificationRepositoryCustom {
-
-    List<Notification> findAllByProjectIdAndAccountId(Long projectId, Long accountId);
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:299d71bc19b4c3c07ee7aaf5a9fa2cd8326cf90b81c53ca954e69c743475a27b
+size 281

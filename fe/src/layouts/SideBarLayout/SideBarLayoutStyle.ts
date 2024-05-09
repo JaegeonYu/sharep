@@ -1,3 +1,15 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:840721f939e29f914bb9f467e19386a413974b36660239ceadb6d0f2e3168e6d
-size 282
+import styled from 'styled-components';
+
+export const Wrapper = styled.main`
+  display: flex;
+  width: 100%;
+  height: 100%;
+`;
+
+export const Container = styled.section`
+  width: calc(100% - 260px);
+  height: 100%;
+  padding: 56px 60px;
+  overflow-x: hidden;
+  overflow-y: auto;
+`;

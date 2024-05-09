@@ -1,3 +1,17 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:34565e49cc10b6a360dae4381ca4fa0248c3b77f6ea5b7b69cffd9e08d81c1f9
-size 409
+import React from 'react';
+import * as S from './MethodBadgeStyle';
+import * as T from '@types';
+
+const METHOD_BADGE_BG_COLOR: {
+  [key: string]: string;
+} = {
+  GET: '#DBEDDB',
+  PUT: '#FDECC8',
+  PATCH: '#EBDEEE',
+  POST: '#D3E5EF',
+  DELETE: '#FFE2DD',
+};
+
+export default function MethodBadge({ name }: T.MethodBadgeProps) {
+  return <S.Wrapper $bgColor={METHOD_BADGE_BG_COLOR[name]}>{name}</S.Wrapper>;
+}
