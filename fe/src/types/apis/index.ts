@@ -1,6 +1,6 @@
 import {
   GetFeatureIssuesListResponse,
-  GetKanvanListResponse,
+  GetKanbanListResponse,
   GetContributionsResponse,
   GetJobListResponse,
   GetNowIssueListResponse,
@@ -11,7 +11,7 @@ import {
 
 export type {
   GetFeatureIssuesListResponse,
-  GetKanvanListResponse,
+  GetKanbanListResponse,
   GetContributionsResponse,
   GetJobListResponse,
   GetNowIssueListResponse,
