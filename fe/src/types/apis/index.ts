@@ -1,6 +1,6 @@
 import {
-  GetFeatureIssuesListResponse,
-  GetKanvanListResponse,
+  DetailIssue,
+  SimpleIssue,
   GetContributionsResponse,
   GetJobListResponse,
   GetNowIssueListResponse,
@@ -10,8 +10,8 @@ import {
 } from './projects';
 
 export type {
-  GetFeatureIssuesListResponse,
-  GetKanvanListResponse,
+  DetailIssue,
+  SimpleIssue,
   GetContributionsResponse,
   GetJobListResponse,
   GetNowIssueListResponse,
