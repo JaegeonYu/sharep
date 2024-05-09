@@ -1,3 +1,14 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:3cfe75c74480f046c9d231ff904297b68c11a4cd61cf0312ab48ed569eee90f3
-size 343
+import * as T from '@types';
+import React from 'react';
+
+export interface CommitHistoryProps extends Omit<T.CommitProps, 'disabled'> {}
+
+export interface FilterProps {
+  type: {
+    accountId: { id: number | null; data: string | null };
+    roleType: { id: number | null; data: Extract<T.RoleBadgeProps, 'role'> | null };
+    issueId: { id: number | null; data: string | null };
+  };
+  icon: React.JSX.Element;
+  label: string;
+}
