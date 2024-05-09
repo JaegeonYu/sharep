@@ -8,7 +8,7 @@ export interface CommitProps {
   imageUrl?: string;
   issueId?: number;
   member: {
-    memberId?: number;
+    accountId?: number;
     nickname: string;
     roles: Extract<T.RoleBadgeProps, 'role'>[];
     userImageUrl?: string;
