@@ -1,15 +1,3 @@
-package com.sharep.be.modules.issue.repository;
-
-import com.sharep.be.modules.issue.Issue;
-import com.sharep.be.modules.issue.type.IssueType;
-import java.util.List;
-
-public interface CustomIssueRepository {
-
-    List<Issue> findAllByMemberId(Long memberId);
-
-
-    List<Issue> findAllByProjectIdAndIssueType(Long projectId, IssueType issueType);
-
-    List<Issue> findAllByProjectId(Long projectId);
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:f0a800cb853ad636f047556ecf492f3b737c742d9cac612fff0519a0e50802c2
+size 400
