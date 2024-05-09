@@ -2,6 +2,6 @@ export interface GalleryCardProps {
   id: number;
   issueName: string;
   createdAt: string;
-  type: 'SCREEN' | 'PRIVATE';
+  type: 'SCREEN' | 'INFRA';
   imageUrl?: string;
 }

@@ -6,12 +6,10 @@ import * as T from '@/types';
  * children => 버튼내용
  * bgc => boolean true : 배경 시그니처 색  / false : 흰배경
  */
-export default function MainColorBtn({ children, bgc, disabled }: T.MainColorBtnProps) {
+export default function MainColorBtn({ children, bgc, disabled, onClick }: T.MainColorBtnProps) {
   return (
-    <>
-      <S.Wrapper $flag={bgc} $disabled={disabled}>
-        {children}
-      </S.Wrapper>
-    </>
+    <S.Wrapper $flag={bgc} $disabled={disabled} onClick={onClick}>
+      {children}
+    </S.Wrapper>
   );
 }
