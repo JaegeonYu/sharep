@@ -1,15 +1,15 @@
 package com.sharep.be.modules.issue.repository;
 
 import com.sharep.be.modules.issue.Issue;
+import com.sharep.be.modules.issue.type.DataType;
 import com.sharep.be.modules.issue.type.IssueType;
 import java.util.List;
+import java.util.Optional;
 
 public interface CustomIssueRepository {
 
-    List<Issue> findAllByMemberId(Long memberId);
+    Optional<Issue> findByIssueId(Long id);
 
-
-    List<Issue> findAllByProjectIdAndIssueType(Long projectId, IssueType issueType);
-
-    List<Issue> findAllByProjectId(Long projectId);
+    List<Issue> findAllByProjectIdAndAccountIdAndIssueType(
+            Long projectId, Long accountId, IssueType issueType, DataType dataType);
 }
