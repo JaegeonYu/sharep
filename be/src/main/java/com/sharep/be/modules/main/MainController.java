@@ -1,3 +1,13 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:eeb25e74708aebcb19d956fd6403e70e48e92de8dcf4164ee812a3373dc52ee2
-size 293
+package com.sharep.be.modules.main;
+
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+@RestController
+public class MainController {
+
+    @GetMapping("/")
+    public String healthCheck(){
+        return "hello";
+    }
+}
