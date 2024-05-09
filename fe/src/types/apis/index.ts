@@ -5,6 +5,7 @@ import {
   GetJobListResponse,
   GetNowIssueListResponse,
   GetProjectMemberListResponse,
+  GetProjectIssueListResponse,
   //   GetScreenIssueListResponse,
 } from './projects';
 
@@ -15,5 +16,6 @@ export type {
   GetJobListResponse,
   GetNowIssueListResponse,
   GetProjectMemberListResponse,
+  GetProjectIssueListResponse,
   //   GetScreenIssueListResponse,
 };
