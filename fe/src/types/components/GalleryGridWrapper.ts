@@ -1,6 +1,5 @@
-import { GalleryCardProps } from '..';
-
+import * as T from '@/types';
 export interface GalleryGridWrapperProps {
-  issueList: GalleryCardProps[];
+  issueList: T.API.SimpleIssue[];
   type: 'SCREEN' | 'INFRA';
 }
