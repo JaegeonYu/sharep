@@ -1,4 +1,4 @@
-import { atom } from 'recoil';
+import { atom, useRecoilState } from 'recoil';
 
 interface User {
   id: number;
