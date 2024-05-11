@@ -1,14 +1,3 @@
-import { atom, useRecoilState } from 'recoil';
-
-interface User {
-  id: number;
-  email: string;
-  nickname: string;
-  imageUrl: string | null;
-  // 다른 필요한 사용자 정보 추가 가능
-}
-
-export const userState = atom<User | null>({
-  key: 'userState',
-  default: null,
-});
+version https://git-lfs.github.com/spec/v1
+oid sha256:013c120842d83c649dce3e299bcb566a8364afae936da73f7180710d92ac82c1
+size 285
