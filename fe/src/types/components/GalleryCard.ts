@@ -1,7 +1,5 @@
+import * as T from '@/types';
 export interface GalleryCardProps {
-  id: number;
-  issueName: string;
-  createdAt: string;
+  issue: T.API.SimpleIssue;
   type: 'SCREEN' | 'INFRA';
-  imageUrl?: string;
 }
