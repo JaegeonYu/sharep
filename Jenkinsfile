@@ -63,7 +63,7 @@ pipeline {
         branch 'main'
       }
       steps {
-        sh "docker compose -f ${env.METADATA}/docker-compose.yml restart fe $(docker compose config --services | grep '^be')"
+        sh 'docker compose -f ${env.METADATA}/docker-compose.yml restart fe $(docker compose -f ${env.METADATA}/docker-compose.yml config --services | grep \'^be\')'
       }
     }
   }
