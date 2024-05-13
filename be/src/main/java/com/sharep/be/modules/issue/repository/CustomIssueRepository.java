@@ -8,7 +8,7 @@ import java.util.Optional;
 
 public interface CustomIssueRepository {
 
-    Optional<Issue> findByIssueId(Long id);
+    Optional<Issue> findByIssueId(Long id, DataType dataType);
 
     List<Issue> findAllByProjectIdAndAccountIdAndIssueType(
             Long projectId, Long accountId, IssueType issueType, DataType dataType);
