@@ -7,6 +7,7 @@ export interface CommitProps {
   createdAt: string;
   imageUrl?: string;
   issueId?: number;
+  infra?: boolean;
   member: {
     accountId?: number;
     nickname: string;
