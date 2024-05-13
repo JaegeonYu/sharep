@@ -10,4 +10,6 @@ public interface MemberRepositoryCustom {
 
     List<Member> findAllWithAssigneeByProjectId(Long projectId);
 
+    List<Member> findAllWithAssigneeByProjectIdAndAccountId(Long projectId, Long accountId);
+
 }
