@@ -7,4 +7,9 @@ public interface MemberRepositoryCustom {
     List<Member> findAllByProjectId(Long projectId);
 
     List<Member> findAllWithIssueAndJob();
+
+    List<Member> findAllWithAssigneeByProjectId(Long projectId);
+
+    List<Member> findAllWithAssigneeByProjectIdAndAccountId(Long projectId, Long accountId);
+
 }
