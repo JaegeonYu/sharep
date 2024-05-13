@@ -1,3 +1,13 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:eb15f6d9d87a54a5bc770e2d7742ddcf1f0bae386ca7d9249facad419fff2ae9
-size 633
+package com.sharep.be.modules.job.repository;
+
+import com.sharep.be.modules.job.domain.Job;
+import com.sharep.be.modules.member.Role.RoleType;
+import java.util.List;
+
+public interface JobRepositoryCustom {
+    List<Job> findAllByAccountId(Long accountId);
+
+    List<Job> findContributionByProjectIdAndAccountId(Long projectId, Long accountId);
+
+    List<Job> findAllByCondition(Long projectId, Long accountId, Long issueId, RoleType roleType);
+}
