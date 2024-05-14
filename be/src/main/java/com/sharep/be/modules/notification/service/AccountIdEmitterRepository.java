@@ -1,3 +1,14 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:bc4582f8463df8d1c689755070eb6b0afc3b190d673db256651f0ac7f511cd46
-size 350
+package com.sharep.be.modules.notification.service;
+
+import java.util.Map;
+import java.util.concurrent.ConcurrentHashMap;
+import org.springframework.web.servlet.mvc.method.annotation.SseEmitter;
+
+public interface AccountIdEmitterRepository {
+
+    void save(Long id, SseEmitter emitter);
+
+    void deleteById(Long id);
+
+    SseEmitter get(Long id);
+}
