@@ -1,12 +1,3 @@
-package com.sharep.be.modules.notification.service;
-
-import com.sharep.be.modules.notification.domain.Notification;
-import com.sharep.be.modules.notification.repository.NotificationRepositoryCustom;
-import java.util.Optional;
-import org.springframework.data.jpa.repository.JpaRepository;
-
-public interface NotificationRepository extends JpaRepository<Notification, Long>,
-        NotificationRepositoryCustom {
-
-    Optional<Notification> findByIdAndMemberAccountId(Long notificationId, Long accountId);
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:89122a7454c2e523fb36f03ffc7029e44b3a538e291481321ea0c86bf1053650
+size 435
