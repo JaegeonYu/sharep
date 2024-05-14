@@ -1,3 +1,15 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:957e36f7c7243936daad79c09749eddcbab0b0e210d10970d2f52b7a4fd562c6
-size 420
+package com.sharep.be.modules.member.repository;
+
+import com.sharep.be.modules.member.Member;
+import java.util.List;
+
+public interface MemberRepositoryCustom {
+    List<Member> findAllByProjectId(Long projectId);
+
+    List<Member> findAllWithIssueAndJob();
+
+    List<Member> findAllWithAssigneeByProjectId(Long projectId);
+
+    List<Member> findAllWithAssigneeByProjectIdAndAccountId(Long projectId, Long accountId);
+
+}
