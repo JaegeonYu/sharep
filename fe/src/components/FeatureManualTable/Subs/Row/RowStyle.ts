@@ -1,15 +1,3 @@
-import styled from 'styled-components';
-import { PALETTE } from '@/styles';
-
-export const RowWrapper = styled.li`
-  display: flex;
-  width: 100%;
-  min-width: fit-content;
-  height: fit-content;
-  min-height: fit-content;
-  border-bottom: 1px solid ${PALETTE.TABLE_BORDER};
-
-  & > div:nth-of-type(1) {
-    font-weight: 700;
-  }
-`;
+version https://git-lfs.github.com/spec/v1
+oid sha256:0e0b66c7e441af8ba1e6e6a606ac22a95fb8d280052516175a4d000f3e7995cd
+size 331
