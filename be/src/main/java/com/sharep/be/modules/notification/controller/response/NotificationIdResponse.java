@@ -1,4 +1,4 @@
-package com.sharep.be.modules.notification.controller;
+package com.sharep.be.modules.notification.controller.response;
 
 import lombok.Builder;
 
