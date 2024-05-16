@@ -1,3 +1,9 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:4fc75aed9900fd73224cc809c5756f283bac1667c4c6a2125475d800f8c7a061
-size 159
+{
+  "arrowParens": "avoid",
+  "semi": true,
+  "singleQuote": true,
+  "tabWidth": 2,
+  "trailingComma": "all",
+  "printWidth": 120,
+  "proseWrap": "preserve"
+}
