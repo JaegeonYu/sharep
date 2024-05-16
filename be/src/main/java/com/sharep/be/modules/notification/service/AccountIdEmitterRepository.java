@@ -1,14 +1,3 @@
-package com.sharep.be.modules.notification.service;
-
-import java.util.Map;
-import java.util.concurrent.ConcurrentHashMap;
-import org.springframework.web.servlet.mvc.method.annotation.SseEmitter;
-
-public interface AccountIdEmitterRepository {
-
-    void save(Long id, SseEmitter emitter);
-
-    void deleteById(Long id);
-
-    SseEmitter get(Long id);
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:4c18383d3e476fc33e59ab4bb047c01af9f1502eb797a5a76c9a6a037307e1f3
+size 281
