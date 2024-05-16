@@ -1,18 +1,3 @@
-import * as T from '@/types';
-
-export interface CommitProps {
-  id?: number;
-  name: string;
-  description: string;
-  createdAt: string;
-  imageUrl?: string;
-  issueId?: number;
-  infra?: boolean;
-  member: {
-    accountId?: number;
-    nickname: string;
-    roles: Extract<T.RoleBadgeProps, 'role'>[];
-    userImageUrl?: string;
-  };
-  disabled: boolean; // accordion 열고 닫을 수 있는지
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:7eb9a554d5f3a0c3908a83c00d7388f05545aa36c1308d8174f678a6f0b7e86a
+size 398
