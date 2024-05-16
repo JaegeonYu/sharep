@@ -1,3 +1,16 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:12520b9442d4ad1b3a4e315536558bdef399c0258e94f17cb1f434783e910e72
-size 369
+import React from 'react';
+
+export default function PModal() {
+  return (
+    <div className="MyModal">
+      <div className="Mask"></div>
+      <div className="Modal-body">
+        <div className="content">
+          <h3>모달 타이틀</h3>
+          <p>모달 텍스트 입니다.</p>
+          <button>닫기</button>
+        </div>
+      </div>
+    </div>
+  );
+}
