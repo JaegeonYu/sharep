@@ -1,3 +1,13 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:1eca58193e5dac6b134e6573244c201258e03e8b6d338effcf4be148c1795d65
-size 667
+package com.sharep.be.modules.assignee.repository;
+
+import com.sharep.be.modules.assignee.domain.Assignee;
+import java.util.Optional;
+import org.springframework.data.jpa.repository.JpaRepository;
+
+public interface AssigneeJpaRepository extends JpaRepository<Assignee, Long> {
+
+    Optional<Assignee> findByMemberIdAndIssueId(Long memberId, Long issueId);
+
+    boolean existsByMemberIdAndIssueId(Long memberId, Long issueId);
+
+}
