@@ -1,10 +1,3 @@
-import styled from 'styled-components';
-
-export const ManualWrapper = styled.main`
-  width: 100%;
-  height: fit-content;
-  padding: 24px;
-  overflow-x: scroll;
-  overflow-y: hidden;
-  border-radius: 12px;
-`;
+version https://git-lfs.github.com/spec/v1
+oid sha256:08a82f5bfafb3472662da702832afeab9c6e9a867e61cedf6bef4b187b94dcdc
+size 689
