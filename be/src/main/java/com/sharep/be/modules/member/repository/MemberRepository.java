@@ -9,5 +9,4 @@ public interface MemberRepository extends JpaRepository<Member, Long>, MemberRep
 
     Optional<Member> findByAccountIdAndProjectId(Long accountId, Long projectId);
 
-    List<Member> findAllByProjectIdAndAccountIdIn(Long projectId, List<Long> accountIds);
 }
