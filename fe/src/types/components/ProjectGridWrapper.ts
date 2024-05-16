@@ -1,4 +1,5 @@
-import { ProjectCardProps } from '..';
+import * as T from '@/types';
+
 export interface ProjectGridWrapperProps {
-  issueList: ProjectCardProps[];
+  projectList: T.API.GetProjectListResponse[];
 }
