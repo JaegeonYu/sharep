@@ -10,5 +10,5 @@ public interface NotificationRepository {
 
     List<Notification> findAllByProjectIdAndAccountId(Long projectId, Long accountId);
 
-    void save(Notification notification);
+    Notification save(Notification notification);
 }
