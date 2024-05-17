@@ -1,20 +1,3 @@
-package com.sharep.be.modules.security;
-
-import lombok.ToString;
-
-import static com.google.common.base.Preconditions.checkArgument;
-
-@ToString
-public class JwtAuthentication {
-
-    public final Long id;
-    public final String email;
-
-    public JwtAuthentication(Long id, String email) {
-        checkArgument(id != null, "id must be provided.");
-        checkArgument(email != null, "email must be provided.");
-        this.id = id;
-        this.email = email;
-    }
-
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:df8c5fd731ed01ea3d6a7697473f93796630cbc283e9ba9108e7da8ab5ec2491
+size 472
