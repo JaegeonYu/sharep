@@ -1,14 +1,3 @@
-package com.sharep.be.modules.notification.service;
-
-import com.sharep.be.modules.notification.domain.Notification;
-import java.util.List;
-import java.util.Optional;
-
-public interface NotificationRepository {
-
-    Optional<Notification> findByIdAndMemberAccountId(Long notificationId, Long accountId);
-
-    List<Notification> findAllByProjectIdAndAccountId(Long projectId, Long accountId);
-
-    Notification save(Notification notification);
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:fb3410182309a8ee524de8de863ed890fa4b8e4cfdd44ae253318d12eb5d8fd8
+size 548
