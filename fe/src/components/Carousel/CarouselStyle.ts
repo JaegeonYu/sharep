@@ -1,3 +1,14 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:bfc1c38165d85282c2cae8a38d9eb05a88548438e6cdcd5c0470837dfa3f7e55
-size 297
+import styled from 'styled-components';
+
+export const Dot = styled.div<{
+  isSelected?: boolean;
+}>`
+  background-color: ${({ isSelected }) => (isSelected ? `#2dc937` : '#707070')};
+
+  border-radius: 4px;
+  display: inline-block;
+  height: 8px;
+  width: 8px;
+  margin: 10px;
+  cursor: pointer;
+`;
