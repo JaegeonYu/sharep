@@ -1,11 +1,3 @@
-package com.sharep.be.modules.storyboard.service;
-
-import com.sharep.be.modules.storyboard.Storyboard;
-import com.sharep.be.modules.storyboard.StoryboardRequest.IssueConnect;
-
-public interface StoryboardService {
-
-    Storyboard connectIssue(IssueConnect issueConnect);
-
-    void disconnectIssue(Long connectionId);
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:2d59bfb87b7f1fe526160cf28eec56ea505807e06f2684afab337259473264b9
+size 318
