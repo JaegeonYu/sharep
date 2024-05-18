@@ -1,3 +1,8 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:96ed921e319a8f582d7caf74593c3e39359d822088722690daba1ae32e14c249
-size 225
+package com.sharep.be.modules.exception;
+
+public class StoryboardNotFoundException extends RuntimeException {
+
+    public StoryboardNotFoundException() {
+        super("연결된 이슈를 찾을 수 없습니다.");
+    }
+}
