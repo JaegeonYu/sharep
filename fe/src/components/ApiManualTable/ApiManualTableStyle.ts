@@ -1,3 +1,76 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:7a4db8f553559cab978781ac2ddf1321a78fd01ef0f609501ba7cd6879698ca7
-size 1626
+import styled from 'styled-components';
+import { PALETTE } from '@/styles';
+
+export const TableWrapper = styled.div`
+  width: fit-content;
+  height: fit-content;
+  border-radius: 12px;
+`;
+
+export const TableContainer = styled.ul`
+  width: fit-content;
+  min-width: fit-content;
+  height: 100%;
+  min-height: fit-content;
+  padding: 20px;
+  overflow: auto;
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0px 6px 24px rgba(0, 0, 0, 0.05);
+`;
+
+export const TitleRowWrapper = styled.li`
+  display: flex;
+  width: 100%;
+  min-width: fit-content;
+  height: fit-content;
+  min-height: fit-content;
+`;
+
+export const Title = styled.div<{ $fixedWidth: string }>`
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 12px;
+  min-width: ${({ $fixedWidth }) => $fixedWidth};
+  border-top: 1px solid ${PALETTE.TABLE_BORDER};
+  border-bottom: 1px solid ${PALETTE.TABLE_BORDER};
+  padding: 16px;
+  font-weight: 700;
+  cursor: default;
+
+  & > span {
+    font-size: 14px;
+    color: ${PALETTE.TABLE_TITLE};
+  }
+`;
+
+export const RowWrapper = styled.li`
+  display: flex;
+  width: 100%;
+  min-width: fit-content;
+  height: fit-content;
+  min-height: fit-content;
+  border-bottom: 1px solid ${PALETTE.TABLE_BORDER};
+
+  & > div:nth-of-type(1) {
+    font-weight: 700;
+  }
+`;
+
+export const CreateNewRowButton = styled.button`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  width: 100%;
+  height: 42px;
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  margin-top: 12px;
+
+  & > span {
+    color: ${PALETTE.LIGHT_BLACK};
+  }
+`;

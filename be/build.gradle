@@ -1,3 +1,76 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:05804089b0f1d10378dd29053e3e30f896539efcbfd1bc11509fa0f1a7dbb5a5
-size 2524
+plugins {
+    id 'java'
+    id 'org.springframework.boot' version '3.2.5'
+    id 'io.spring.dependency-management' version '1.1.4'
+}
+
+group = 'com.sharep'
+version = '0.0.1-SNAPSHOT'
+
+java {
+    sourceCompatibility = '17'
+}
+
+configurations {
+    compileOnly {
+        extendsFrom annotationProcessor
+    }
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation 'org.springframework.boot:spring-boot-starter-security'
+    implementation 'org.springframework.boot:spring-boot-starter-web'
+    implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
+    implementation 'org.springframework.boot:spring-boot-starter-validation:3.2.2'
+    implementation group: 'ch.qos.logback', name: 'logback-classic', version: '1.4.14'
+    implementation 'com.mysql:mysql-connector-j:8.3.0'
+    runtimeOnly 'com.h2database:h2'
+    compileOnly 'org.projectlombok:lombok'
+    developmentOnly 'org.springframework.boot:spring-boot-devtools'
+    annotationProcessor 'org.projectlombok:lombok'
+    testImplementation 'org.springframework.boot:spring-boot-starter-test'
+    testImplementation 'org.springframework.security:spring-security-test'
+
+    //jwt
+    implementation 'io.jsonwebtoken:jjwt-api:0.11.5'
+    implementation 'io.jsonwebtoken:jjwt-impl:0.11.5'
+    implementation 'io.jsonwebtoken:jjwt-jackson:0.11.5'
+
+    implementation group: 'org.modelmapper', name: 'modelmapper', version: '2.4.2'
+
+    // code check
+    implementation group: 'com.google.guava', name: 'guava', version: '33.1.0-jre'
+    implementation group: 'commons-io', name: 'commons-io', version: '2.11.0'
+    implementation group: 'org.apache.commons', name: 'commons-lang3', version: '3.12.0'
+
+    testCompileOnly 'org.projectlombok:lombok' // 테스트 의존성 추가
+    testAnnotationProcessor 'org.projectlombok:lombok' // 테스트 의존성 추가
+
+
+    //s3
+    implementation 'org.springframework.cloud:spring-cloud-starter-aws:2.2.6.RELEASE'
+
+    // queryDSL
+    implementation 'com.querydsl:querydsl-jpa:5.0.0:jakarta'
+    annotationProcessor "com.querydsl:querydsl-apt:5.0.0:jakarta"
+    annotationProcessor "jakarta.annotation:jakarta.annotation-api"
+    annotationProcessor "jakarta.persistence:jakarta.persistence-api"
+
+    // swagger
+    implementation 'org.springdoc:springdoc-openapi-starter-webmvc-ui:2.2.0'
+
+    implementation 'org.springframework.boot:spring-boot-starter-websocket'
+
+
+    implementation group: 'org.webjars.npm', name: 'yjs', version: '13.6.14'
+
+
+}
+
+tasks.named('test') {
+    useJUnitPlatform()
+}

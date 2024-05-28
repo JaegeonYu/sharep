@@ -1,3 +1,26 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:eb11efd59ae3915b19c28073c401eb6c18ac40a27a82b4a2d05a5eb8e4853c17
-size 530
+import * as T from '@types';
+
+export interface TeamDashboardProps {}
+
+export interface TeamMemberProps {
+  accountId: number;
+  nickname: string;
+  roles: Extract<T.RoleBadgeProps, 'role'>[];
+  userImageUrl: string;
+}
+
+export interface GanttChartProps {
+  projectIssueList: T.API.SimpleIssue[];
+}
+
+export interface CurrentWorkProps {
+  member: TeamMemberProps;
+  issue: {
+    description: string;
+    epic: string;
+    id: number;
+    issueName: string;
+    priority: 'HIGH' | 'MEDIUM' | 'LOW';
+    type: 'FEATURE';
+  } | null;
+}

@@ -1,3 +1,30 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:6ecdda1ca11beeb2cec7f10b7587422eb57633b5dc3a7e5ad0c030271c963b16
-size 808
+package com.sharep.be.modules.auth;
+
+import com.sharep.be.modules.account.Account;
+import java.util.List;
+import lombok.Getter;
+import lombok.Setter;
+import lombok.ToString;
+import org.springframework.security.core.authority.SimpleGrantedAuthority;
+import org.springframework.security.core.userdetails.User;
+
+@Getter
+@ToString
+@Setter
+public class CustomAccountInfo extends User {
+    private Account account;
+    private Long id;
+    private String email;
+    private List<String> roles;
+
+
+    public CustomAccountInfo(Account account) {
+        super(account.getEmail(), account.getPassword(), List.of(new SimpleGrantedAuthority("ROLE_USER")));
+        this.account = account;
+        this.id = account.getId();
+        this.email = account.getEmail();
+        this.roles = List.of("ROLE_USER");
+    }
+
+
+}

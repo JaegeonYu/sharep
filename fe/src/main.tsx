@@ -1,3 +1,18 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:d1dfa9ab5d16c6f603b17ccde8370fc113c0a4d4542e97952b493b87330f45b4
-size 513
+import React from 'react';
+import App from './App.tsx';
+import ReactDOM from 'react-dom/client';
+import { RecoilRoot } from 'recoil';
+import { BrowserRouter } from 'react-router-dom';
+import ReactQueryProvider from './providers/ReactQueryProvider.tsx';
+
+ReactDOM.createRoot(document.getElementById('root')!).render(
+  // <React.StrictMode>
+  <ReactQueryProvider>
+    <RecoilRoot>
+      <BrowserRouter>
+        <App />
+      </BrowserRouter>
+    </RecoilRoot>
+  </ReactQueryProvider>,
+  // </React.StrictMode>,
+);

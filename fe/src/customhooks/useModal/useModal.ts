@@ -1,3 +1,43 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:1474488be83404a55aae314591f021f7dfaa379f3a63f64a2b48fc0bca360372
-size 1049
+import { modalDataState } from '@/stores/atoms/modal';
+import { useRecoilState } from 'recoil';
+
+export const useModal = <Contents extends { [key: string]: any }>(modalId: string) => {
+  const [modalData, setModalData] = useRecoilState(modalDataState(modalId));
+
+  const openModal = (initialContents: Partial<Contents> = {}) => {
+    setModalData({
+      isOpen: true,
+      contents: { ...initialContents },
+      isValid: false,
+    });
+  };
+
+  const closeModal = () => {
+    setModalData(oldModalData => ({
+      ...oldModalData,
+      isOpen: false,
+      isValid: false,
+    }));
+  };
+
+  const updateContentByKey = <K extends keyof Contents>(key: K, value: Contents[K]) => {
+    setModalData(oldModalData => ({
+      ...oldModalData,
+      contents: { ...oldModalData.contents, [key]: value },
+    }));
+  };
+
+  const updateIsValid = (value: boolean) => {
+    setModalData(oldModalData => ({
+      ...oldModalData,
+      isValid: value,
+    }));
+  };
+
+  return {
+    openModal,
+    closeModal,
+    updateContentByKey,
+    updateIsValid,
+  };
+};

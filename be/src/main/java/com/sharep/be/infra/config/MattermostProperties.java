@@ -1,3 +1,27 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:22ea90dd675bbf7addc38a12daeb826a1380a9fb91868a5dfe7f9a1f813f82c0
-size 781
+package com.sharep.be.infra.config;
+
+import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
+import lombok.Getter;
+import lombok.Setter;
+import org.springframework.boot.context.properties.ConfigurationProperties;
+import org.springframework.context.annotation.Primary;
+import org.springframework.stereotype.Component;
+
+@Component
+@Getter
+@Setter
+@ConfigurationProperties("notification.mattermost")
+@Primary
+public class MattermostProperties {
+
+    private String channel;
+    private String pretext;
+    private String color = "#ff5d52";
+    private String authorName;
+    private String authorIcon;
+    private String title;
+    private String text = "";
+    private String footer = LocalDateTime.now().format(DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm"));
+
+}

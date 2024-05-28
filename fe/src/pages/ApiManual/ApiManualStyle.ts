@@ -1,3 +1,19 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:3174afac7f185132657c491dc5947d96bbdedaab128afad5a18bd958081a8815
-size 566
+import styled from 'styled-components';
+
+export const ManualWrapper = styled.main`
+  width: 100%;
+  height: fit-content;
+  padding: 24px;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  border-radius: 12px;
+`;
+
+export const StyledText = styled.span<{ color?: string; fontSize?: number; fontWeight?: number }>`
+  color: ${({ color }) => color};
+  font-size: ${({ fontSize }) => (fontSize ? `${fontSize}px` : '14px')};
+  font-weight: ${({ fontWeight }) => (fontWeight ? `${fontWeight}` : '400')};
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+`;

@@ -1,3 +1,27 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:69337cf8b0bd85e8f6eb9e80e4690dd3827b63712aa4483fb565e27572b087a9
-size 1149
+package com.sharep.be.modules.assignee.controller.response;
+
+import com.sharep.be.modules.assignee.domain.Assignee;
+import com.sharep.be.modules.assignee.domain.State;
+import com.sharep.be.modules.member.Role;
+import com.sharep.be.modules.member.Role.RoleType;
+import java.util.List;
+import java.util.Optional;
+import lombok.Builder;
+
+@Builder
+public record AssigneeResponse(Long id, State state, Long accountId, String name, String imageUrl,
+                               List<RoleType> roles) {
+
+    public static AssigneeResponse from(Assignee assignee) {
+        return Optional.ofNullable(assignee)
+                .map(a -> AssigneeResponse.builder()
+                        .id(assignee.getId())
+                        .state(assignee.getState())
+                        .accountId(assignee.getMember().getAccount().getId())
+                        .name(a.getMember().getAccount().getNickname())
+                        .imageUrl(a.getMember().getAccount().getImageUrl())
+                        .roles(a.getMember().getRoles().stream().map(Role::getRole).toList())
+                        .build()
+                ).orElse(null);
+    }
+}

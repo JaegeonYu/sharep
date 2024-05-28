@@ -1,3 +1,18 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:115bcda6637a21c060ab958b6257bae0d8ca05d78c707fd3141dcef4b79a0de8
-size 606
+package com.sharep.be.modules.assignee.controller;
+
+import com.sharep.be.modules.assignee.domain.State;
+import com.sharep.be.modules.member.MemberWithIssueResponse;
+import java.util.List;
+
+public interface AssigneeService {
+
+    Long update(Long accountId, Long projectId, Long issueId, State state);
+
+    Long create(Long projectId, Long issueId, Long accountId);
+
+    Long delete(Long projectId, Long issueId, Long accountId);
+
+    List<MemberWithIssueResponse> readProjectMemberNowIssue(Long projectId);
+
+    List<MemberWithIssueResponse> readProjectMemberNowOwnIssue(Long projectId, Long accountId);
+}

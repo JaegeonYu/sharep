@@ -1,3 +1,24 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:ae5b593f4cbba43686b98d221a3ce610aa1fa3a745116e8bc568c077c63f2d33
-size 643
+import styled from 'styled-components';
+
+export const Wrapper = styled.div`
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+`;
+
+export const Header = styled.div`
+  display: inline-flex;
+  justify-content: space-between;
+  align-items: center;
+`;
+
+export const StyledText = styled.span<{ color?: string; fontSize?: number; fontWeight?: number }>`
+  color: ${({ color }) => color};
+  font-size: ${({ fontSize }) => (fontSize ? `${fontSize}px` : '14px')};
+  font-weight: ${({ fontWeight }) => (fontWeight ? `${fontWeight}` : '400')};
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+`;

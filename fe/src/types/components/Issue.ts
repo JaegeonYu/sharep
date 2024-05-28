@@ -1,3 +1,19 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:1cadfc16cf1a6b2ca969b735d64fa0f70e0bd3a2ac541bcbf06a8e52c26b8702
-size 639
+import React from 'react';
+import * as T from '@types';
+
+export interface IssueProps {
+  id: number;
+  issueName: string;
+  description: string | null;
+  assignees: { accountId: number; id: number; imageUrl: string; name: string; state: 'YET' | 'NOW' | 'DONE' }[] | null;
+  priority: 'HIGH' | 'MEDIUM' | 'LOW' | null;
+  jobs: { name: string; createdAt: string }[] | null;
+  epic: string | null;
+  state: 'YET' | 'NOW' | 'DONE';
+  type: 'SCREEN' | 'PRIVATE' | 'FEATURE' | 'INFRA';
+
+  deleteAble: boolean;
+  dragAble:
+    | false
+    | { setter: React.Dispatch<React.SetStateAction<null | number>>; onDrop: (e: React.DragEvent) => void };
+}

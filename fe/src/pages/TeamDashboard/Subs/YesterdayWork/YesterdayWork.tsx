@@ -1,3 +1,18 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:76fb4130d38c4f213193268c1b208e09a33b4918bfd2e7e5529899857e90fbea
-size 570
+import React from 'react';
+import * as T from '@types';
+import * as Sub from '..';
+import * as S from './YesterdayWorkStyle';
+
+export default function YesterdayWork({ account, roles, summary }: T.YesterdayWorkProps) {
+  return (
+    <S.YesterdayWork>
+      <Sub.TeamMember
+        accountId={account.id}
+        userImageUrl={account.imageUrl}
+        nickname={account.nickname}
+        roles={roles}
+      />
+      <p aria-label={summary !== null ? summary : ''}>{summary !== null ? summary : '요약을 할 작업이 없습니다.'}</p>
+    </S.YesterdayWork>
+  );
+}

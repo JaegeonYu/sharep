@@ -1,3 +1,43 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:6ee6a14c68fef77fc5f3036eef46f79c5f997f33afc423dc1e3a54755c00cd73
-size 1078
+{
+  "compilerOptions": {
+    "target": "ES2020",
+    "useDefineForClassFields": true,
+    "lib": ["ES2020", "DOM", "DOM.Iterable"],
+    "module": "ESNext",
+    "skipLibCheck": true,
+
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+
+    /* Bundler mode */
+    "moduleResolution": "bundler",
+    "allowImportingTsExtensions": true,
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "noEmit": true,
+    "jsx": "react-jsx",
+
+    /* Linting */
+    "strict": true,
+    "noUnusedLocals": false,
+    "noUnusedParameters": true,
+    "noFallthroughCasesInSwitch": true,
+
+    "baseUrl": "src",
+    "paths": {
+      "@/*": ["*"],
+      "@assets": ["assets/"],
+      "@layouts": ["layouts/"],
+      "@apis": ["apis/"],
+      "@stores": ["stores/"],
+      "@types": ["types/"],
+      "@pages": ["pages/"],
+      "@customhooks": ["customhooks/"],
+      "@styles": ["styles/"],
+      "@constrants": ["constrants/"],
+      "@components": ["components/"]
+    }
+  },
+  "include": ["src", "src/svg.d.ts"],
+  "references": [{ "path": "./tsconfig.node.json" }]
+}

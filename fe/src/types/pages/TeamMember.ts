@@ -1,3 +1,41 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:66bbf3855afb21df984f995a31eb55f31eca9ffb32f90e19aae2bc4de3ec5d21
-size 1005
+import * as T from '@types';
+import React from 'react';
+
+export interface KanbanProps {
+  state: 'YET' | 'NOW' | 'DONE';
+  issues: T.API.SimpleIssue[];
+  dragEnterdState: null | 'YET' | 'NOW' | 'DONE';
+  setDragEnterdState: React.Dispatch<React.SetStateAction<null | 'YET' | 'NOW' | 'DONE'>>;
+  refetchKanbansResponse: () => any;
+  dragAble: boolean;
+  deleteAble: boolean;
+  // setIssues: React.Dispatch<React.SetStateAction<Omit<T.IssueProps, 'dragAble'>[]>>;
+}
+
+export interface ContributionsChartProps {
+  dataList: { [date: string]: number } | null;
+}
+
+export interface YesterdayWorkProps {
+  account: {
+    email: string;
+    id: number;
+    imageUrl: string;
+    nickname: string;
+  };
+  id: number;
+  roles: Extract<T.RoleBadgeProps, 'role'>[];
+  summary: string | null;
+}
+
+export interface MemberListResponse {
+  account: {
+    email: string;
+    id: number;
+    imageUrl: string;
+    nickname: string;
+  };
+  id: number;
+  roles: Extract<T.RoleBadgeProps, 'role'>[];
+  summary: string | null;
+}
